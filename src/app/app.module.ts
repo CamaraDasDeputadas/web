@@ -9,6 +9,7 @@ import { DeputadoViewComponent } from './pages/deputado-view/deputado-view.compo
 import { HomeComponent } from './pages/home/home.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
+import {NgHttpLoaderModule} from 'ng-http-loader';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { QuizComponent } from './pages/quiz/quiz.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgHttpLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

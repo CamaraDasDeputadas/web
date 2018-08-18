@@ -86,12 +86,13 @@ export class QuizComponent implements OnInit {
                       'Mais nova - BRUNIELE FERREIRA GOMES 28\n' +
                       'Mais velha - LUIZA ERUNDINA DE SOUSA    83 anos\n'
       },
-      {texto: '', idxResposta: 3, opcoes: [
-          {idx: 1, texto: 'Ensino Médio Completo'},
-          {idx: 2, texto: 'Ensino Superior Incompleto'},
-          {idx: 3, texto: 'Ensino Superior Completo'},
-          {idx: 4, texto: 'Pós-graduação'}
-        ]
+      {texto: 'Em média, qual a quantidade de leis propostas por mulheres na Câmara dos Deputados no ano de 2016?', idxResposta: 2, opcoes: [
+          {idx: 1, texto: 'Cerca de 1 por ano'},
+          {idx: 2, texto: 'Cerca de 5 por ano'},
+          {idx: 3, texto: 'Cerca de 10 por ano'},
+          {idx: 4, texto: 'Cerca de 15 por ano'}
+        ],
+        explanation: 'Homens e mulheres dão entrada em cerca de 5 propostas de lei por ano, mostrando que elas são tão atuantes quanto os homens'
       },
       {texto: '', idxResposta: 3, opcoes: [
           {idx: 1, texto: 'Ensino Médio Completo'},
