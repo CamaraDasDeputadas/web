@@ -45,6 +45,23 @@ body {
   cursor: pointer;
 }
 
+.btn-resultado {
+  border: none;
+  padding: 12px 25px 12px 25px;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: #6CBE9A;
+  color: #FFF;
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+}
+
+.btn-resultado:hover {
+  cursor: pointer;
+}
+
 .color-grey {
   color: #676767;
 }

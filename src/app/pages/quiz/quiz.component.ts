@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 declare var $: any;
 
 @Component({
@@ -12,13 +13,15 @@ export class QuizComponent implements OnInit {
   step: number;
   perguntas: any;
   indicesLimpar: any;
+  numeroAcertos: number;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.answer = false;
     this.step = 1;
     this.indicesLimpar = [];
+    this.numeroAcertos = 0;
     this.perguntas = [
       {texto: 'Quando foi eleita a primeira mulher na câmara?', idxResposta: 1, opcoes: [
           {idx: 1, texto: '1933'},
@@ -108,6 +111,7 @@ export class QuizComponent implements OnInit {
     if (!this.answer) {
       this.answer = true;
       if (idx === p.idxResposta) {
+        this.numeroAcertos++;
         $('#card-resp-' + idx).toggleClass('card-resposta-success');
         this.indicesLimpar[this.indicesLimpar.length] = {idx: idx, class: 'card-resposta-success'};
       } else {
@@ -131,6 +135,16 @@ export class QuizComponent implements OnInit {
         $('#card-resp-' + elem.idx).toggleClass(elem.class);
       }
       this.indicesLimpar = [];
+    }
+  }
+
+  verResultado() {
+    if (this.numeroAcertos < 4) {
+      this.router.navigate(['acerto-baixo']);
+    } else if (this.numeroAcertos > 3 && this.numeroAcertos < 8) {
+      this.router.navigate(['acerto-medio']);
+    } else if (this.numeroAcertos > 7) {
+      this.router.navigate(['acerto-alto']);
     }
   }
 

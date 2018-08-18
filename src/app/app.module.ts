@@ -10,6 +10,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
 import {NgHttpLoaderModule} from 'ng-http-loader';
+import { AcertoBaixoComponent } from './pages/acerto-baixo/acerto-baixo.component';
+import { AcertoMedioComponent } from './pages/acerto-medio/acerto-medio.component';
+import { AcertoAltoComponent } from './pages/acerto-alto/acerto-alto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import {NgHttpLoaderModule} from 'ng-http-loader';
     DeputadoViewComponent,
     HomeComponent,
     SobreComponent,
-    QuizComponent
+    QuizComponent,
+    AcertoBaixoComponent,
+    AcertoMedioComponent,
+    AcertoAltoComponent
   ],
   imports: [
     BrowserModule,

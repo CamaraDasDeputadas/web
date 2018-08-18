@@ -54,9 +54,14 @@
       </p>
     </div>
   </div>
-  <div class="row" style="text-align: -webkit-center;">
+  <div *ngIf="step < 10" class="row" style="text-align: -webkit-center;">
     <div class="col-md-12">
       <button class="btn-faca-teste" (click)="clickProximo()">Próximo</button>
+    </div>
+  </div>
+  <div *ngIf="step === 10" class="row" style="text-align: -webkit-center;">
+    <div class="col-md-12">
+      <button class="btn-resultado" (click)="verResultado()">Ver Resultado</button>
     </div>
   </div>
 </div>
