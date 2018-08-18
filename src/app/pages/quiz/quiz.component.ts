@@ -20,6 +20,14 @@ export class QuizComponent implements OnInit {
     this.step = 1;
     this.indicesLimpar = [];
     this.perguntas = [
+      {texto: 'Quando foi eleita a primeira mulher na câmara?', idxResposta: 1, opcoes: [
+          {idx: 1, texto: '1933'},
+          {idx: 2, texto: '1960'},
+          {idx: 3, texto: '1989'},
+          {idx: 4, texto: '2010'}
+        ],
+        explanation: 'Em 1933 realizam-se as primeiras eleições em que se permite o voto às mulheres. A primeira mulher a ser eleita deputada foi a médica Carlota Pereira de Queiróz, que havia participado ativamente da Revolução Constitucionalista. Para o cargo de Presidente, a primeira candidatura registrada por uma mulher ocorreu em 1989, e apenas em 2010 uma mulher foi eleita'
+      },
       {texto: 'Qual o grau de escolaridade da maioria das deputadas que compõem a Câmara?', idxResposta: 3, opcoes: [
           {idx: 1, texto: 'Ensino Médio Completo'},
           {idx: 2, texto: 'Ensino Superior Incompleto'},
@@ -43,14 +51,6 @@ export class QuizComponent implements OnInit {
           {idx: 4, texto: '47%'}
         ],
         explanation: 'No período de 1995 a 2018, das 5.504 propostas apresentadas por mulheres na Câmara, 857 foram arquivadas, o que representa 15% do total'
-      },
-      {texto: 'Quando foi eleita a primeira mulher na câmara?', idxResposta: 1, opcoes: [
-          {idx: 1, texto: '1933'},
-          {idx: 2, texto: '1960'},
-          {idx: 3, texto: '1989'},
-          {idx: 4, texto: '2010'}
-        ],
-        explanation: 'Em 1933 realizam-se as primeiras eleições em que se permite o voto às mulheres. A primeira mulher a ser eleita deputada foi a médica Carlota Pereira de Queiróz, que havia participado ativamente da Revolução Constitucionalista. Para o cargo de Presidente, a primeira candidatura registrada por uma mulher ocorreu em 1989, e apenas em 2010 uma mulher foi eleita'
       },
       {texto: 'Qual a porcentagem das mulheres que se candidatam que são eleitas?', idxResposta: 1, opcoes: [
           {idx: 1, texto: '2%'},
