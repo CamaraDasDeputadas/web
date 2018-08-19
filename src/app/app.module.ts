@@ -13,6 +13,7 @@ import {NgHttpLoaderModule} from 'ng-http-loader';
 import { AcertoBaixoComponent } from './pages/acerto-baixo/acerto-baixo.component';
 import { AcertoMedioComponent } from './pages/acerto-medio/acerto-medio.component';
 import { AcertoAltoComponent } from './pages/acerto-alto/acerto-alto.component';
+import { ConsultaComponent } from './pages/consulta/consulta.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AcertoAltoComponent } from './pages/acerto-alto/acerto-alto.component';
     QuizComponent,
     AcertoBaixoComponent,
     AcertoMedioComponent,
-    AcertoAltoComponent
+    AcertoAltoComponent,
+    ConsultaComponent
   ],
   imports: [
     BrowserModule,

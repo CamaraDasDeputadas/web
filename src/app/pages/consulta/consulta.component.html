@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-md-12">
+    <h1>Votações de {{deputado[0].nome}}</h1>
+  </div>
+</div>
+
+<div *ngIf="deputado[0].votacoes.length > 0" class="row" style="margin-bottom: 30px;">
+  <div class="col-md-12">
+    <div class="row" *ngFor="let v of deputado[0].votacoes">
+      <div class="col-md-12">
+        <a target="_blank" href="https://www12.senado.leg.br/ecidadania/visualizacaomateria?id={{v.id_votacao}}">
+          https://www12.senado.leg.br/ecidadania/visualizacaomateria?id={{v.id_votacao}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="deputado[0].votacoes.length === 0">
+  <div class="col-md-12">
+    <p>Não foram encontradas consultas públicas para esta deputada.</p>
+  </div>
+</div>

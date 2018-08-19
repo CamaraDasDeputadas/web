@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DeputadoService} from '../../services/deputado.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-deputados',
@@ -10,7 +11,8 @@ export class DeputadosComponent implements OnInit {
 
   deputadas: any;
 
-  constructor(private deputadoService: DeputadoService) { }
+  constructor(private deputadoService: DeputadoService,
+              private router: Router) { }
 
   ngOnInit() {
     this.deputadoService.listarDeputadas().subscribe(
@@ -25,6 +27,10 @@ export class DeputadosComponent implements OnInit {
 
   linkBio(id) {
     window.open('http://www2.camara.leg.br/deputados/pesquisa/layouts_deputados_biografia?pk=' + id, '_blank');
+  }
+
+  linkConsulta(id) {
+    this.router.navigate(['consulta-publica/' + id + '/deputada']);
   }
 
 }
