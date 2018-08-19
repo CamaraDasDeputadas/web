@@ -97,12 +97,14 @@ export class QuizComponent implements OnInit {
         ],
         explanation: 'Homens e mulheres dão entrada em cerca de 5 propostas de lei por ano, mostrando que elas são tão atuantes quanto os homens'
       },
-      {texto: '', idxResposta: 3, opcoes: [
-          {idx: 1, texto: 'Ensino Médio Completo'},
-          {idx: 2, texto: 'Ensino Superior Incompleto'},
-          {idx: 3, texto: 'Ensino Superior Completo'},
-          {idx: 4, texto: 'Pós-graduação'}
-        ]
+      {texto: 'Qual estado brasileiro tem mais deputadas eleitas?', idxResposta: 4, opcoes: [
+          {idx: 1, texto: 'Alagoas'},
+          {idx: 2, texto: 'São Paulo'},
+          {idx: 3, texto: 'Paraná'},
+          {idx: 4, texto: 'Rio de Janeiro'}
+        ],
+        explanation: 'O estado do Rio do Janeiro é o que mais elege mulheres à câmara dos deputados, e os estados Alagoas, Mato Grosso, ' +
+          'Paraíba e Sergipe não tem representantes no parlamento.'
       }
     ];
   }

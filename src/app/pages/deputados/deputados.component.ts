@@ -23,4 +23,8 @@ export class DeputadosComponent implements OnInit {
     );
   }
 
+  linkBio(id) {
+    window.open('http://www2.camara.leg.br/deputados/pesquisa/layouts_deputados_biografia?pk=' + id, '_blank');
+  }
+
 }

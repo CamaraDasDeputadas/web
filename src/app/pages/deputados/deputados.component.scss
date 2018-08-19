@@ -11,3 +11,17 @@
   border: 3px solid #FFF;
   margin-top: -5px;
 }
+
+.link-bio {
+  border: none;
+  width: 100%;
+  padding: 12px 25px 12px 25px;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: #373737;
+  color: #FFF;
+}
+
+.link-bio:hover {
+  cursor: pointer;
+}

@@ -12,8 +12,6 @@
                 <span class="card-title nome" style="margin: 0px;">{{d.nome}}</span>
                 <br />
                 <span class="card-subtitle mb-2 text-muted" style="margin: 0px;">{{d.sigla_partido}}</span>
-                <br />
-                <span>{{d.detalhe.escolaridade}}</span>
               </div>
             </div>
           </div>
@@ -23,11 +21,14 @@
             <div class="line-white"></div>
           </div>
         </div>
-        <div class="row">
+        <div class="row" style="margin-top: 15px;">
           <div class="col-md-12">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex eequat.
+            <button class="link-bio" (click)="linkBio(d.id)">Biografia</button>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+          <div class="col-md-12">
+            <button class="link-bio" (click)="linkBio(d.id)">Consulta Pública</button>
           </div>
         </div>
       </div>
