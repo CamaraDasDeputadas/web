@@ -11,7 +11,7 @@
               <div class="col-md-12">
                 <span class="card-title nome" style="margin: 0px;">{{d.nome}}</span>
                 <br />
-                <span class="card-subtitle mb-2 text-muted" style="margin: 0px;">{{d.sigla_partido}}</span>
+                <span class="card-subtitle mb-2 text-muted" style="margin: 0px; font-weight: bold;">{{d.sigla_partido}}</span>
                 <br />
                 <span class="card-subtitle mb-2 text-muted" style="margin: 0px; color: #fff; font-size: 13px;">{{d.detalhe.escolaridade}}</span>
               </div>
@@ -24,13 +24,11 @@
           </div>
         </div>
         <div class="row" style="margin-top: 15px;">
-          <div class="col-md-12">
-            <button class="link-bio" (click)="linkBio(d.id)">Biografia</button>
+          <div class="col-md-4">
+            <img class="btn-bio" src="assets/botoes-07.png" (click)="linkBio(d.id)" />
           </div>
-        </div>
-        <div class="row" style="margin-top: 15px;">
-          <div class="col-md-12">
-            <button class="link-bio" (click)="linkBio(d.id)">Consulta Pública</button>
+          <div class="col-md-8">
+            <img class="btn-consulta" src="assets/botoes-08.png" (click)="linkBio(d.id)" />
           </div>
         </div>
       </div>

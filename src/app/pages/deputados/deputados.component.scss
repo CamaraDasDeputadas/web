@@ -25,3 +25,16 @@
 .link-bio:hover {
   cursor: pointer;
 }
+
+.btn-bio {
+  max-width: 80px;
+}
+
+.btn-consulta {
+  max-width: 155px;
+}
+
+.btn-bio:hover,
+.btn-consulta:hover {
+  cursor: pointer;
+}
