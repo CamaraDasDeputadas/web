@@ -79,15 +79,17 @@ export class QuizComponent implements OnInit {
         ],
         explanation: 'O Brasil fica atrás, em termos de participação de mulheres em Parlamentos, de países como a Jordânia, Síria, Somália, Líbia, Marrocos, Indonésia, Iraque, Paquistão, Afeganistão, Tunísia, Emirados Árabes e mesmo a Arábia Saudita, com 19% de assentos no Congresso reservados para as mulheres'
       },
-      {texto: 'Qual a média de idade das mulheres na Câmara dos Deputados?', idxResposta: 3, opcoes: [
-          {idx: 1, texto: '27'},
-          {idx: 2, texto: '39'},
-          {idx: 3, texto: '54'},
-          {idx: 4, texto: '65'}
+      {texto: 'Quais dos temas abaixo estão mais presentes nas propostas das mulheres que dos homens?', idxResposta: 3, opcoes: [
+          {idx: 1, texto: 'Direito da mulher e da criança'},
+          {idx: 2, texto: 'Participação política e discriminação religiosa'},
+          {idx: 3, texto: 'Violência doméstica e negros'},
+          {idx: 4, texto: 'Educação e homicídio qualificado'}
         ],
-        explanation: 'A idade média das mulheres eleitas é de 54,09, sendo 69 anos a idade mais comum. Os homens tem XX anos de média, sendo mais comum XX anos. \n' +
-                      'Mais nova - BRUNIELE FERREIRA GOMES 28\n' +
-                      'Mais velha - LUIZA ERUNDINA DE SOUSA    83 anos\n'
+        explanation: 'Nos últimos quatro anos, os dez temas que estão mais presentes nas propostas das mulheres que dos homens são: Estupro ' +
+          'compartilhado, negros, amamentação, violência doméstica e familiar, ação afirmativa, local privado, emissora, instituto federal ' +
+          'de educação, transporte coletivo urbano e sexo feminino. Já os homens, quando comparado com as mulheres, trazem mais à discussão ' +
+          'os dez seguintes temas: bombeiro militar, policial militar, advogado, Presidente da República, homicídio qualificado, cidadão, ' +
+          'poder legislativo, militar, Ordem dos Advogados do Brasil e sítio (internet).'
       },
       {texto: 'Em média, qual a quantidade de leis propostas por mulheres na Câmara dos Deputados no ano de 2016?', idxResposta: 2, opcoes: [
           {idx: 1, texto: 'Cerca de 1 por ano'},
