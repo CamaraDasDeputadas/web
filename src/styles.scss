@@ -1,4 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@media only screen and (max-width: 600px) {
+  ul.header-menu {
+    overflow: inherit !important;
+  }
+  .col-md-12 {
+    width: 100% !important;
+  }
+  ul.header-menu > li {
+    float: inherit !important;
+  }
+
+  .padding {
+    padding: 2em 1.5em 0em 1.5em !important;
+  }
+
+  .voce-sabia {
+    text-align: -webkit-center !important;
+  }
+
+  .voce-sabia > h2 {
+    max-width: 100% !important;
+  }
+
+  .list-deputadas {
+    text-align: -webkit-center;
+  }
+
+  .dep-info {
+    margin-left: 15px;
+  }
+
+}
+
 .card-title.nome {
   margin-top: 1em;
 }
